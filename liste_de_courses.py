@@ -1,4 +1,9 @@
 # Auteur : ngbamedistingue@yahoo.com
+# Python version 3.9
+#!/usr/bin/env python3
+"""
+Projet : Liste de courses
+"""
 
 import sys
 
@@ -56,8 +61,11 @@ def ajout():
     global liste_de_courses
     ajoute_element = input(
         "Entrez le nom d'un élément à ajouter à la liste de courses : ")
-    liste_de_courses.append(ajoute_element.capitalize())
-    print(f"L'élément {ajoute_element} a bien été ajouté à la liste.")
+    if ajoute_element.capitalize() in liste_de_courses:
+        print(f"L'élément {ajoute_element} est déjà dans la liste.")
+    else:
+        liste_de_courses.append(ajoute_element.capitalize())
+        print(f"L'élément {ajoute_element} a bien été ajouté à la liste.")
     print("_________________________________________________________")
     mon_application()
 
