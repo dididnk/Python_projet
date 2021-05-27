@@ -17,8 +17,7 @@ nombre_mystere = random.randint(0, 100)
 titre = "*** Le Jeu Du Nombre Mystère ***\n"    # titre du jeu
 essais = 5                                      # nombre d'essais
 tentative = 1                                   # nombre d'essais pour gagner
-# nombre choisi (sa vraie valeur sera celle que l'utilisateur saisira)
-nombre_choisi = 0
+nombre_choisi = 0                               # nombre choisi
 
 ###############################################################
 #                    MENU PRINCIPAL                           #

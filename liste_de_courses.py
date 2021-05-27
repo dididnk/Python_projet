@@ -11,6 +11,7 @@ import sys
 #                   VARIABLES GLOBALES                        #
 ###############################################################
 
+titre = "*** Liste De Courses ***\n"    # titre du jeu
 liste_de_courses = []     # Liste de courses
 option = ""               # choix de l'utilisateur
 ajouter = "1"             # choix 1: ajouter un élément
@@ -23,7 +24,7 @@ quitter = "5"             # choix 5: quitter le programme
 #                    MENU PRINCIPAL                           #
 ###############################################################
 
-
+print(titre)
 def mon_application():
 
     print(f"""
@@ -34,7 +35,7 @@ def mon_application():
     {vider}: Vider la liste
     {quitter}: Quitter
     """)
-    option = input("Votre choix : ")
+    option = input("\U0001F449Votre choix : ")
 
     if option == ajouter:
         ajout()
