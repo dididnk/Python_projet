@@ -1,8 +1,10 @@
-#!/usr/bin/env python3
+# Auteur : ngbamedistingue@yahoo.com
+# Python version 3.7
+# !/usr/bin/env python3
+# encoding=utf8
 """
 TFTP Server Command.
 """
-
 import sys
 import os
 import argparse

@@ -1,0 +1,65 @@
+U0001F19A   : VS
+U0001F197   : OK
+U0001F194   : ID
+U0001F449   : doigt vers la droite
+U0001F448   : doigt vers la gauche
+U0001F44F   : main bravo
+U0001F531   : tridon
+U0001F4B2   : $
+U0001F501   : repeter
+U0001F6AB   : pas d'entrée
+U0001F6D2   : panier de courses
+U0001F48A   : médicament
+U0001FA78   : sang
+U0001F489   : seringue
+U0001F9EA   : possion (tube)
+U0001F9F0   : trousse de secours
+U0001F527   : clé de parametrage
+U0001F6E1   : bouclier
+U0001F3F9   : flèche
+U0001FA93   : hache
+U0001F5E1   : epé
+U0001F511   : clé
+U0001F510   : clé+cadenas
+U0001F512   : cadenas fermé
+U0001F5D1   : pubelle vide
+U0001F5C3   : dossier classé
+U0001F4CB   : note carnet
+U0001F4CA   : note évolution
+U0001F4C5   : calendrier
+U0001F4C2   : gestionnaire de fichier
+U0001F4C3   : page
+U0001F4D6   : livre ouvert
+U0001F4A1   : empoule
+U0001F600   : smile
+U0001F60D   : emoji avec coeurs aux yeux
+U0001F496   : coeur
+U0001F49E   : deux coeurs
+U0001F9E1   : coeur orange
+U0001F49B   : coeur jaune
+U0001F49A   : coeur vert
+U0001F499   : coeur bleu
+U0001F5A4   : coeur noir
+U0001F90D   : coeur blanc
+U0001F4AF   : 100
+U0001F573   : trou
+U0001F44B   : main au revoir
+U0001F467   : fille
+U0001F9D1   : garcon
+U0001F3E0   : maison
+U0001F550   : montre
+U0001F31F   : étoile
+U0001F525   : feu
+U0001F3C6   : trophée
+U0001F3D0   : balon
+U0001F451   : courone
+U0001F48E   : diamand
+U0001F50B   : batterie
+U0001F332   : arbre
+U0001F341   : feuille
+U0001F3AA   : tente
+U0001F40D   : serpent
+U0001F339   : fleur
+U0001F334   : arbre 2
+U0001F52A   : couteau
+\U0001F622  : triste

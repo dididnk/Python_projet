@@ -1,17 +1,17 @@
 # Auteur : ngbamedistingue@yahoo.com
-# Python version 3.9
-#!/usr/bin/env python3
+# Python version 3.7
+# !/usr/bin/env python3
+# encoding=utf8
 """
 Projet : Liste de courses
 """
-
 import sys
 
 ###############################################################
 #                   VARIABLES GLOBALES                        #
 ###############################################################
 
-titre = "*** Liste De Courses ***\n"    # titre du jeu
+titre = "* Liste De Courses *\n ******************"    # titre du jeu
 liste_de_courses = []     # Liste de courses
 option = ""               # choix de l'utilisateur
 ajouter = "1"             # choix 1: ajouter un élément
@@ -26,7 +26,6 @@ quitter = "5"             # choix 5: quitter le programme
 
 print(titre)
 def mon_application():
-
     print(f"""
     Choisissez parmi les 5 options suivantes :\n
     {ajouter}: Ajouter un élément à la liste
@@ -35,8 +34,7 @@ def mon_application():
     {vider}: Vider la liste
     {quitter}: Quitter
     """)
-    option = input("\U0001F449Votre choix : ")
-
+    option = input("\U0001F449  Votre choix : ")
     if option == ajouter:
         ajout()
     elif option == supprimer:
@@ -52,11 +50,9 @@ def mon_application():
             "Veillez saisir une option valide 'ex: un chiffre [1, 5]' svp!\n")
         mon_application()
 
-
 ###############################################################
 #                        AJOUT                                #
 ###############################################################
-
 
 def ajout():
     global liste_de_courses
@@ -74,9 +70,7 @@ def ajout():
 #                      SUPPRESSION                            #
 ###############################################################
 
-
 def suppression():
-
     if liste_de_courses == []:
         print("Désolé vous n'avez aucun élément dans votre liste.")
     else:
@@ -95,9 +89,7 @@ def suppression():
 #                      AFFICHAGE                              #
 ###############################################################
 
-
 def affichage():
-
     if liste_de_courses == []:
         print("Votre liste ne contient aucun élément.")
     else:
@@ -111,28 +103,24 @@ def affichage():
 #                     NETTOYAGE                               #
 ###############################################################
 
-
 def nettoyer():
-
     global liste_de_courses
-    liste_de_courses = []
+    liste_de_courses.clear()
     print("La liste a été vidée de son contenu.")
     print("_________________________________________________________")
     mon_application()
-
 
 ###############################################################
 #                    FERMETURE                                #
 ###############################################################
 
 def fermeture():
-    print("\nÀ bientôt !")
+    print("\nÀ bientôt !\U0001F44B")
     sys.exit()
 
 ###############################################################
 #             OUVERTURE DE MON APPLICATION                    #
 ###############################################################
-
 
 while True:
     mon_application()
