@@ -23,9 +23,10 @@ ennemi_attaque = 0                      # dégât de l'attaque de l'ennemi
 #                    CONSTANTES                               #
 ###############################################################
 
-ATTAQUE = "1"                           # code pour attaquer
-DEFENSE = "2"                           # code pour gagner des vies
-
+ATTAQUE = "1"       # code pour attaquer
+DEFENSE = "2"       # code pour gagner des vies
+MIN = 5             # attaque minimum
+MAX = 10            # attaque maximum
 
 ###############################################################
 #                    EMOJIS                                   #
@@ -50,8 +51,8 @@ def mon_application():
     option = input(
         f"Souhaitez-vous attaquer (1) {e_hache} ou utiliser une potion {e_possion} (2) ❓ ")
     if option == ATTAQUE:
-        mon_attaque = random.randint(5, 10)
-        ennemi_attaque = random.randint(5, 15)
+        mon_attaque = random.randint(MIN, MAX)
+        ennemi_attaque = random.randint(MIN, MAX+MIN)
         ennemi_pv -= mon_attaque
         mon_pv -= ennemi_attaque
         print(
@@ -60,12 +61,12 @@ def mon_application():
         print(
             f"L'ennemi vous a infligé {ennemi_attaque} {e_hache} points de dégats")
         affiche_vie_restant(mon_pv, ennemi_pv)
-        print("🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿")
+        print("🌿"*35)
         mon_application()
     elif option == DEFENSE:
         if possion != 0:
             pv_aleatoire = random.randint(15, 50)
-            ennemi_attaque = random.randint(5, 15)
+            ennemi_attaque = random.randint(MIN, MAX+MIN)
             mon_pv += pv_aleatoire
             mon_pv -= ennemi_attaque
             possion -= 1
@@ -74,7 +75,7 @@ def mon_application():
             print(
                 f"L'ennemi vous a infligé {ennemi_attaque}{e_hache} points de dégats")
             test_la_partie(mon_pv, ennemi_pv)
-            print("🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿")
+            print("🌿"*35)
             ennemi_attaque = random.randint(5, 15)
             mon_pv -= ennemi_attaque
             print(f"Vous passez votre tour {e_passer_tour}")
@@ -84,7 +85,7 @@ def mon_application():
             affiche_vie_restant(mon_pv, ennemi_pv)
         else:
             print("❌ Désolé ! vous n'avez plus de possion 🗑️")
-        print("🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿")
+        print("🌿"*35)
         mon_application()
     else:
         mon_application()

@@ -11,7 +11,7 @@ import sys
 #                   VARIABLES GLOBALES                        #
 ###############################################################
 
-titre = "* Liste De Courses *\n ******************"    # titre du jeu
+titre = "✪ ✪ Liste De Courses ✪ ✪\n ✪✪✪✪✪✪✪✪✪✪✪✪✪✪"    # titre du jeu
 liste_de_courses = []     # Liste de courses
 option = ""               # choix de l'utilisateur
 ajouter = "1"             # choix 1: ajouter un élément
@@ -27,14 +27,14 @@ quitter = "5"             # choix 5: quitter le programme
 print(titre)
 def mon_application():
     print(f"""
-    Choisissez parmi les 5 options suivantes :\n
-    {ajouter}: Ajouter un élément à la liste
-    {supprimer}: Retirer un élément de la liste
-    {afficher}: Afficher la liste
-    {vider}: Vider la liste
-    {quitter}: Quitter
+    💭 Choisissez parmi les 5 options suivantes :\n
+    {ajouter}: Ajouter un élément à la liste ↩️
+    {supprimer}: Retirer un élément de la liste ↪️
+    {afficher}: Afficher la liste 📘
+    {vider}: Vider la liste 🗑️
+    {quitter}: Quitter ❌
     """)
-    option = input("\U0001F449  Votre choix : ")
+    option = input(" 🛒 Votre choix : ")
     if option == ajouter:
         ajout()
     elif option == supprimer:
@@ -47,7 +47,7 @@ def mon_application():
         fermeture()
     else:
         print(
-            "Veillez saisir une option valide 'ex: un chiffre [1, 5]' svp!\n")
+            "⚠️ Veillez saisir une option valide 'ex: un chiffre [1, 5]' svp!\n")
         mon_application()
 
 ###############################################################
@@ -57,13 +57,13 @@ def mon_application():
 def ajout():
     global liste_de_courses
     ajoute_element = input(
-        "Entrez le nom d'un élément à ajouter à la liste de courses : ")
+        "↩️ Entrez le nom d'un élément à ajouter à la liste de courses : ")
     if ajoute_element.capitalize() in liste_de_courses:
-        print(f"L'élément {ajoute_element} est déjà dans la liste.")
+        print(f"L'élément {ajoute_element} est déjà dans la liste. 🤭")
     else:
         liste_de_courses.append(ajoute_element.capitalize())
-        print(f"L'élément {ajoute_element} a bien été ajouté à la liste.")
-    print("_________________________________________________________")
+        print(f"L'élément {ajoute_element} a bien été ajouté à la liste. ✅")
+    print("♦"*35)
     mon_application()
 
 ###############################################################
@@ -72,17 +72,17 @@ def ajout():
 
 def suppression():
     if liste_de_courses == []:
-        print("Désolé vous n'avez aucun élément dans votre liste.")
+        print("🤕 Désolé vous n'avez aucun élément dans votre liste.")
     else:
         supprime_element = input(
-            "Entrez le nom d'un élément à rétirer de la liste de courses : ")
+            " ↪️ Entrez le nom d'un élément à rétirer de la liste de courses : ")
         if supprime_element in liste_de_courses:
             liste_de_courses.remove(supprime_element)
             print(
                 f"L'élément {supprime_element} a bien été rétiré de la liste.")
         else:
             print(f"L'élément {supprime_element} n'est pas dans la liste.")
-    print("_________________________________________________________")
+    print("♦"*35)
     mon_application()
 
 ###############################################################
@@ -96,7 +96,7 @@ def affichage():
         print("Voici le contenu de votre liste :")
         for ordre, element in enumerate(liste_de_courses):
             print(f"{ordre+1}. {element}")
-    print("_________________________________________________________")
+    print("♦"*35)
     mon_application()
 
 ###############################################################
@@ -107,7 +107,7 @@ def nettoyer():
     global liste_de_courses
     liste_de_courses.clear()
     print("La liste a été vidée de son contenu.")
-    print("_________________________________________________________")
+    print("♦"*35)
     mon_application()
 
 ###############################################################
@@ -115,7 +115,7 @@ def nettoyer():
 ###############################################################
 
 def fermeture():
-    print("\nÀ bientôt !\U0001F44B")
+    print("\nÀ bientôt !👋")
     sys.exit()
 
 ###############################################################
